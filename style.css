@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.display{
+    border-style: solid;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allbtns{
+    display:flex;
+    flex-direction: row;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 150px;
+    margin-right: 50px;
+    
+}
+.btns> * {
+    flex: 1 0 23.33%;
+    box-sizing:border-box;
+    margin: 5px;
+}
+.operators{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.operators> * {
+    margin: 5px;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+
+}
