@@ -11,15 +11,17 @@ body, html {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    border-style: solid;
+    border-radius: 5px;
 }
 .display{
     border-style: solid;
-    width: 250px;
+    width: 255px;
     height: 50px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 .allbtns{
     display:flex;

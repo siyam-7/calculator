@@ -15,6 +15,10 @@ divide = function(a,b){
 }
 
 let num1,num2,operator;
+var disp_val;
+var oper;
+var value1,value2;
+
 
 operate = function(operator,num1,num2){
     if(operator==add){
@@ -51,47 +55,85 @@ const division = document.getElementById("divide");
 
 one.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "1";
+    disp_val+="1";
 });
 
 two.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "2";
+    disp_val+="2";
 });
 three.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "3";
+    disp_val+="3";
 });
 four.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "4";
+    disp_val+="4";
 });
 five.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "5";
+    disp_val+="5";
 });
 six.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "6";
+    disp_val+="6";
+
 });
 seven.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "7";
+    disp_val+="7";
+
 });
 eight.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "8";
+    disp_val+="8";
+
 });
 nine.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "9";
+    disp_val+="9";
+
 });
 zero.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "0";
+    disp_val+="0";
+
 });
 addition.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "+";
+    value1 = parseInt(disp_val);
+    disp_val="";
+    oper=add;
 });
 subtratction.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "-";
+    value1 = parseInt(disp_val);
+    disp_val="";
+    oper=subtract;
+
 });
 mutliplication.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "×";
+    value1 = parseInt(disp_val);
+    disp_val="";
+    oper=multiply;
+
 });
 division.addEventListener("click", function(){
     document.getElementById("display").innerHTML += "/";
+    value1 = parseInt(disp_val);
+    disp_val="";
+    oper=divide;
+
 });
 clear.addEventListener("click", function(){
     document.getElementById("display").innerHTML = "";
+    value1 = parseInt(disp_val);
+    disp_val="";
+
+});
+equal.addEventListener("click", function(){
+    value2 = parseInt(disp_val);
+    disp_val="";
+    document.getElementById("display").innerHTML = operate(oper,value1,value2);
 });
